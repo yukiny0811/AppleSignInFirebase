@@ -31,8 +31,5 @@ public class AuthManager {
 
     public func signOut() throws {
         try Auth.auth().signOut()
-        if let handle {
-            Auth.auth().removeStateDidChangeListener(handle)
-        }
     }
 }
