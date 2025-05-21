@@ -14,7 +14,7 @@ struct DemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(AuthManager.shared) //ここ追加
+                .environment(AuthManager.shared) //important!
         }
     }
 }
